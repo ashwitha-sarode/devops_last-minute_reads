@@ -10,6 +10,9 @@ Dev + Ops, unified. CI/CD, automation, faster reliable releases.
 DevOps + security baked in from day one, not bolted on at the end.
 → Shift-left scanning, policy-as-code, secure-by-default pipelines
 
+**🕹️ AgentOps** 
+The newest layer — managing autonomous AI agents in production. → Multi-agent orchestration, tool-use tracing, cost/latency per run → Guardrails for autonomous decisions: approval gates, rollback, human-in-the-loop
+
 **🌱 GitOps**
 Git as the single source of truth for infra & app state.
 → ArgoCD/FluxCD auto-sync clusters to match Git
