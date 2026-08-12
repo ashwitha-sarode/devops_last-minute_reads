@@ -1,0 +1,88 @@
+🚀 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻, 𝗦𝗶𝗺𝗽𝗹𝗶𝗳𝗶𝗲𝗱: 𝟯𝟭 𝗖𝗼𝗻𝗰𝗲𝗽𝘁𝘀 𝗶𝗻 𝟯𝟭 𝗗𝗮𝘆𝘀
+System Design in 31 Posts — a daily series 🧵 one concept, one minute, one diagram
+
+🧩 𝗣𝗢𝗦𝗧 𝟭: 𝗠𝗼𝗻𝗼𝗹𝗶𝘁𝗵𝗶𝗰 𝘃𝘀 𝗠𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲
+
+💭 𝗛𝗼𝗼𝗸: Every engineering team eventually asks this question: "Should we split this into microservices?" Here's how to actually answer it. 👇
+
+🏛️ 𝗠𝗼𝗻𝗼𝗹𝗶𝘁𝗵𝗶𝗰 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲
+
+ A single codebase and a single deployable unit. Your auth, orders, payments, and inventory modules 𝗮𝗹𝗹 𝗹𝗶𝘃𝗲 𝘁𝗼𝗴𝗲𝘁𝗵𝗲𝗿, share one database, and get deployed as one artifact.
+
+
+┌─────────────────────────────┐
+
+│      MONOLITH APPLICATION    │
+
+│  ┌────────┐ ┌────────┐       │
+
+│  │  Auth  │ │ Orders │  ...  │
+
+│  └────────┘ └────────┘        │
+
+│         one shared DB        │
+
+└─────────────────────────────┘
+
+
+
+🧬 𝗠𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲
+
+
+
+ The same functionality, split into 𝗶𝗻𝗱𝗲𝗽𝗲𝗻𝗱𝗲𝗻𝘁𝗹𝘆 𝗱𝗲𝗽𝗹𝗼𝘆𝗮𝗯𝗹𝗲 𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀, each with its own database, communicating over APIs or message queues.
+
+
+
+ Client → API Gateway
+
+              │
+
+   ┌──────────┼───────────┐
+
+┌──────┐  ┌────────┐  ┌───────────┐
+
+│ Auth  │   │ Orders│  │ Inventory│
+
+│  DB    │   │  DB │   │ DB       │
+
+└──────┘  └────────┘  └───────────┘
+
+
+
+🍔 𝗣𝗿𝗮𝗰𝘁𝗶𝗰𝗮𝗹 𝗘𝘅𝗮𝗺𝗽𝗹𝗲
+
+ A food delivery startup with 𝟱,𝟬𝟬𝟬 𝘂𝘀𝗲𝗿𝘀 runs fine as a monolith — one team, one deploy, fast iteration. 🏃‍♂️
+
+At 𝟱 𝗺𝗶𝗹𝗹𝗶𝗼𝗻 𝘂𝘀𝗲𝗿𝘀, the "Order" service gets hammered during lunch hours while "Reviews" sits idle. 📈
+
+⚠️ In a monolith, you scale the 𝘄𝗵𝗼𝗹𝗲 𝗮𝗽𝗽 just to handle Orders.
+
+ ✅ In microservices, you scale 𝗼𝗻𝗹𝘆 𝘁𝗵𝗲 𝗢𝗿𝗱𝗲𝗿 𝘀𝗲𝗿𝘃𝗶𝗰𝗲 — cheaper, faster, and a bug in Reviews can't take down Checkout.
+
+
+⚖️ 𝗪𝗵𝗲𝗻 𝘁𝗼 𝗨𝘀𝗲 𝗪𝗵𝗶𝗰𝗵
+
+🏛️ 𝗠𝗼𝗻𝗼𝗹𝗶𝘁𝗵
+
+ → Small team, early-stage product
+
+ → Simple domain, fast MVP needed
+
+ → Limited ops/DevOps maturity
+
+🧬 𝗠𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀
+
+ → Large team, multiple squads
+
+ → Complex domain, independent scaling needed
+
+ → Strong CI/CD and observability in place
+
+💡 𝗥𝘂𝗹𝗲 𝗼𝗳 𝗧𝗵𝘂𝗺𝗯
+
+ Start monolithic. Split into microservices only when a 𝘀𝗽𝗲𝗰𝗶𝗳𝗶𝗰, 𝗽𝗮𝗶𝗻𝗳𝘂𝗹 scaling or team-coordination problem demands it — not because it's trendy. 🎯
+
+
+
+#SystemDesign #SoftwareEngineering #TechTwitter #Microservices #Monolith #BackendDevelopment #TechCareers #CodingLife #DevCommunity #EngineeringLeadership #TechEducation #FAANGInterview #SoftwareArchitecture #100DaysOfCode #LearnInPublic #GenZTech #TechExplained #BuildInPublic
