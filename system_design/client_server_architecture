@@ -1,0 +1,28 @@
+🚀 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻 𝗦𝗲𝗿𝗶𝗲𝘀 | 𝗗𝗮𝘆 𝟮 𝗼𝗳 𝟯𝟭
+
+🌐 𝗖𝗹𝗶𝗲𝗻𝘁-𝗦𝗲𝗿𝘃𝗲𝗿 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲
+
+Every application you use today — from banking apps 🏦 to streaming platforms 🎬 — is built on one foundational concept: 𝗰𝗹𝗶𝗲𝗻𝘁-𝘀𝗲𝗿𝘃𝗲𝗿 𝗮𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲.
+
+🔧 𝗛𝗼𝘄 𝗶𝘁 𝘄𝗼𝗿𝗸𝘀:
+
+📱 𝗧𝗵𝗲 𝗖𝗹𝗶𝗲𝗻𝘁 — a web browser, mobile app, or any frontend interface the user directly interacts with.
+
+🖥️ 𝗧𝗵𝗲 𝗦𝗲𝗿𝘃𝗲𝗿 — a machine that runs continuously, waiting to receive and process requests.
+
+➡️ The client sends a request to store, retrieve, or modify data.
+⬅️ The server processes that request and returns a response.
+
+This raises an important question: 𝗵𝗼𝘄 𝗱𝗼𝗲𝘀 𝘁𝗵𝗲 𝗰𝗹𝗶𝗲𝗻𝘁 𝗮𝗰𝘁𝘂𝗮𝗹𝗹𝘆 𝗹𝗼𝗰𝗮𝘁𝗲 𝘁𝗵𝗲 𝘀𝗲𝗿𝘃𝗲𝗿 𝗼𝗻 𝘁𝗵𝗲 𝗶𝗻𝘁𝗲𝗿𝗻𝗲𝘁? 🤔 We'll cover that in tomorrow's post.
+
+📲 𝗣𝗿𝗮𝗰𝘁𝗶𝗰𝗮𝗹 𝗲𝘅𝗮𝗺𝗽𝗹𝗲:
+
+When you open Instagram, your app (the client) sends a request to Meta's servers asking for your feed. The server queries its data stores, assembles the results, and returns them — all within milliseconds. ⚡
+
+💡 𝗪𝗵𝘆 𝗶𝘁 𝗺𝗮𝘁𝘁𝗲𝗿𝘀:
+
+This separation between 𝘄𝗵𝗮𝘁 𝘁𝗵𝗲 𝘂𝘀𝗲𝗿 𝘀𝗲𝗲𝘀 and 𝘄𝗵𝗲𝗿𝗲 𝘁𝗵𝗲 𝗹𝗼𝗴𝗶𝗰 𝗮𝗻𝗱 𝗱𝗮𝘁𝗮 𝗹𝗶𝘃𝗲 is what allows frontend and backend teams to build, scale, and update independently — without one breaking the other. It is the foundation every other concept in system design is built on. 🏗️
+
+📌 Follow along for Day 3 of the #SystemDesignSeries.
+
+#SystemDesign #SoftwareEngineering #BackendDevelopment #FrontendDevelopment #WebDevelopment #TechCareers #SoftwareArchitecture #CodingLife #DevCommunity #TechEducation #FAANGInterview #100DaysOfCode #LearnInPublic #EngineeringLeadership #CloudComputing #TechCommunity #CareerGrowth #ComputerScience
