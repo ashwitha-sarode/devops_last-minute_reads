@@ -1,0 +1,29 @@
+🚀 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻 𝗦𝗲𝗿𝗶𝗲𝘀 | 𝗗𝗮𝘆 𝟯 𝗼𝗳 𝟯𝟭
+
+📍 𝗜𝗣 𝗔𝗱𝗱𝗿𝗲𝘀𝘀𝗲𝘀
+
+Yesterday we covered how a client sends a request to a server. But that raises the obvious next question: 𝗵𝗼𝘄 𝗱𝗼𝗲𝘀 𝘁𝗵𝗲 𝗰𝗹𝗶𝗲𝗻𝘁 𝗲𝘃𝗲𝗻 𝗸𝗻𝗼𝘄 𝘄𝗵𝗲𝗿𝗲 𝘁𝗼 𝗳𝗶𝗻𝗱 𝘁𝗵𝗲 𝘀𝗲𝗿𝘃𝗲𝗿?
+
+The answer: every server has a unique 𝗜𝗣 𝗮𝗱𝗱𝗿𝗲𝘀𝘀 — think of it as a phone number for machines on the internet. 📞
+
+🔧 𝗛𝗼𝘄 𝗶𝘁 𝘄𝗼𝗿𝗸𝘀:
+
+🌍 Every publicly deployed server has one unique IP address.
+📡 When a client wants to interact with a service, it must send its request to that exact address.
+🔁 If a service migrates to a new server, its IP address can change — breaking any connection that was hardcoded to the old one.
+
+📲 𝗣𝗿𝗮𝗰𝘁𝗶𝗰𝗮𝗹 𝗲𝘅𝗮𝗺𝗽𝗹𝗲:
+
+Open your terminal and run ping google.com — you'll see the actual IP address behind the domain name, something like 142.250.183.14. That string of numbers is exactly what your device uses to locate Google's servers. 💻
+
+💡 𝗪𝗵𝘆 𝗶𝘁 𝗺𝗮𝘁𝘁𝗲𝗿𝘀:
+
+IP addresses work perfectly for machines — but they're impossible for humans to remember and can change without warning. Nobody wants to memorize a string of numbers for every app they use. 🧠❌
+
+That's exactly the gap 𝗗𝗡𝗦 was built to close — turning those numbers into memorable names like google.com. We'll unpack that tomorrow. 🔜
+
+📌 Follow along for Day 4 of the #SystemDesignSeries.
+
+#SystemDesign #SoftwareEngineering #Networking #BackendDevelopment #CloudComputing #TechCareers #SoftwareArchitecture #CodingLife #DevCommunity #TechEducation #FAANGInterview #100DaysOfCode #LearnInPublic #EngineeringLeadership #TechCommunity #CareerGrowth #ComputerScience #InfrastructureAsCode
+
+
