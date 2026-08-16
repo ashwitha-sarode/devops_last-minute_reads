@@ -1,0 +1,44 @@
+🚀 𝗗𝗮𝘆 𝟲/𝟭𝟬𝟬 — 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻 𝗦𝗲𝗿𝗶𝗲𝘀
+
+𝗧𝗼𝗽𝗶𝗰: 𝗖𝗮𝗰𝗵𝗶𝗻𝗴 — the fastest way to make a slow system feel instant ⚡
+
+Every millisecond counts at scale. Caching is often the single highest-leverage change you can make to a system's performance — and one of the most misunderstood.
+
+🔹 𝗪𝗵𝗮𝘁 𝗶𝘀 𝗰𝗮𝗰𝗵𝗶𝗻𝗴?
+Storing a copy of frequently accessed data closer to where it's needed, so you don't repeat expensive work (DB queries, API calls, computations) on every request.
+
+🔹 𝗪𝗵𝗲𝗿𝗲 𝗰𝗮𝗰𝗵𝗲𝘀 𝗹𝗶𝘃𝗲:
+🟢 Client-side — browser cache, mobile app cache
+🟡 CDN — static assets, images, edge locations
+🟠 Application layer — Redis / Memcached
+🔴 Database — query cache, buffer pool
+
+🔹 𝗖𝗼𝗺𝗺𝗼𝗻 𝗰𝗮𝗰𝗵𝗶𝗻𝗴 𝘀𝘁𝗿𝗮𝘁𝗲𝗴𝗶𝗲𝘀:
+✅ 𝗖𝗮𝗰𝗵𝗲-𝗔𝘀𝗶𝗱𝗲 (𝗟𝗮𝘇𝘆 𝗟𝗼𝗮𝗱𝗶𝗻𝗴) — App checks cache first; on a miss, reads from DB and populates the cache. Simple and widely used, but the first request always pays the full cost.
+
+✅ 𝗪𝗿𝗶𝘁𝗲-𝗧𝗵𝗿𝗼𝘂𝗴𝗵 — Every write goes to the cache and the DB simultaneously. Keeps data consistent, but adds write latency.
+
+✅ 𝗪𝗿𝗶𝘁𝗲-𝗕𝗲𝗵𝗶𝗻𝗱 — Writes go to the cache first and are flushed to the DB asynchronously. Fast writes, but risk of data loss if the cache fails before flush.
+
+✅ 𝗧𝗧𝗟 & 𝗘𝘃𝗶𝗰𝘁𝗶𝗼𝗻 — LRU, LFU, or time-based expiry decide what gets removed when the cache fills up.
+
+📌 𝗥𝗲𝗮𝗹-𝘄𝗼𝗿𝗹𝗱 𝗲𝘅𝗮𝗺𝗽𝗹𝗲:
+Imagine a product page on an e-commerce site hit by 50,000 requests/minute.
+
+Without caching → every request hits the database → DB overload → slow page loads → lost sales.
+
+With Redis caching (cache-aside) →
+1️⃣ Request comes in → check Redis
+2️⃣ Cache hit → return in <5ms
+3️⃣ Cache miss → fetch from DB → store in Redis with a 60s TTL → return response
+
+Result: DB load drops by 90%+, and response times go from ~300ms to single-digit milliseconds.
+
+⚠️ 𝗪𝗮𝘁𝗰𝗵 𝗼𝘂𝘁 𝗳𝗼𝗿:
+Stale data, cache stampedes (many requests missing at once), and over-caching data that changes frequently.
+
+💡 𝗧𝗮𝗸𝗲𝗮𝘄𝗮𝘆: Caching isn't just "add Redis and move on" — the right strategy depends on your read/write ratio, consistency requirements, and failure tolerance. Choosing wrong can cost you more than not caching at all.
+
+What's your go-to caching strategy in production? Drop it below 👇
+
+#SystemDesign #DevOps #PlatformEngineering #SRE #Redis #Caching #100DaysOfSystemDesign
