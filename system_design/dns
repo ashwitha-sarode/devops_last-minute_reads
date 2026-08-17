@@ -1,0 +1,53 @@
+🌍 𝗗𝗡𝗦 (𝗗𝗼𝗺𝗮𝗶𝗻 𝗡𝗮𝗺𝗲 𝗦𝘆𝘀𝘁𝗲𝗺)
+
+
+
+Yesterday we saw that servers are identified by IP addresses — but nobody types 142.250.183.14 into a browser. So how does google.com actually connect you to the right server? 🤔
+
+
+
+The answer: 𝗗𝗡𝗦 — the internet's phonebook. 📖
+
+
+
+🔧 𝗛𝗼𝘄 𝗶𝘁 𝘄𝗼𝗿𝗸𝘀:
+
+
+
+ 🔹 You type a domain name (e.g. algomaster.io) into your browser
+
+ 🔹 Your device asks a 𝗗𝗡𝗦 𝘀𝗲𝗿𝘃𝗲𝗿 to resolve it
+
+ 🔹 The DNS server returns the corresponding IP address
+
+ 🔹 Your browser uses that IP to connect to the actual server
+
+⚡ All of this happens in milliseconds, invisibly, on every single request you make.
+
+
+
+📲 𝗣𝗿𝗮𝗰𝘁𝗶𝗰𝗮𝗹 𝗲𝘅𝗮𝗺𝗽𝗹𝗲:
+
+
+
+Run nslookup or ping on any domain from your terminal — you'll see DNS resolve it to a real IP address in real time. Try it on your own company's domain and watch it happen. 💻
+
+
+
+💡 𝗪𝗵𝘆 𝗶𝘁 𝗺𝗮𝘁𝘁𝗲𝗿𝘀:
+
+
+
+DNS is what lets companies migrate servers, switch cloud providers, or fail over to backup infrastructure — 𝘄𝗶𝘁𝗵𝗼𝘂𝘁 𝗲𝘃𝗲𝗿 𝗯𝗿𝗲𝗮𝗸𝗶𝗻𝗴 𝘁𝗵𝗲 𝗨𝗥𝗟 𝘂𝘀𝗲𝗿𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗸𝗻𝗼𝘄. It's also the first thing platform engineers check when debugging "the site is down" — is it the server, or is it DNS? 🕵️
+
+
+
+🔜 Next up: what happens when traffic gets routed through another server before it even reaches yours — Proxies & Reverse Proxies.
+
+
+
+💬 Quick question for my network: have you ever had a production incident that turned out to be a DNS issue? Drop your story below 👇
+
+
+
+#SystemDesign #DNS #SoftwareEngineering #Networking #CloudComputing #BackendDevelopment #TechCareers #SoftwareArchitecture #DevCommunity #TechEducation #FAANGInterview #100DaysOfCode #LearnInPublic #EngineeringLeadership #TechCommunity #CareerGrowth #InfrastructureAsCode #SRE #PlatformEngineering
