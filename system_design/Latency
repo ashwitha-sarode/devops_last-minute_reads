@@ -1,0 +1,9 @@
+Latency is the round-trip time for data to travel between client and server — and physical distance is the biggest driver of it.
+
+```
+India user ──(9,000 miles)──▶ US Server ──▶ Response back
+```
+
+**Example:** A user in Mumbai hitting a server in Virginia might see 250ms+ latency versus 20ms for a local user — enough to make an app feel sluggish.
+
+**Fix:** Deploy servers across multiple regions so users connect to the nearest one — the same principle behind CDNs.
