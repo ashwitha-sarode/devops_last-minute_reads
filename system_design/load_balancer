@@ -1,0 +1,35 @@
+Today I went deep into how large-scale systems stay fast and available under pressure.
+
+
+
+⚖️ 𝗪𝗵𝗮𝘁 𝗜 𝗲𝘅𝗽𝗹𝗼𝗿𝗲𝗱: 
+
+🔹 Why a single server is a single point of failure 
+
+🔹 Load balancing algorithms — Round Robin, Least Connections, IP Hash, Weighted variants 
+
+🔹 Layer 4 vs Layer 7 load balancing — routing at the transport layer vs the application layer 
+
+🔹 Health checks and how they enable automatic failover 
+
+🔹 Global vs local load balancing (DNS-based traffic distribution across regions)
+
+
+
+💡 𝗞𝗲𝘆 𝘁𝗮𝗸𝗲𝗮𝘄𝗮𝘆: Load balancing isn't just about splitting traffic — it's about designing for failure. The moment you assume a node WILL go down, your architecture decisions change completely.
+
+
+
+As someone working in DevSecOps and Platform Engineering, this connects directly to real-world work — Kubernetes service load balancing, ingress controllers, and traffic shaping in GitOps-managed clusters aren't abstract concepts anymore. They're daily reality.
+
+
+
+📌 5 days in, and system design is reshaping how I think about reliability, not just architecture.
+
+
+
+𝗡𝗲𝘅𝘁 𝘂𝗽: Caching strategies and CDN design.
+
+
+
+#SystemDesign #100DaysOfSystemDesign #DevSecOps #PlatformEngineering #LoadBalancing #CloudNative #Kubernetes #LearningInPublic
