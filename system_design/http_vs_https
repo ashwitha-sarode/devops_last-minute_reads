@@ -1,0 +1,9 @@
+𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻: 𝗛𝗧𝗧𝗣 𝘃𝘀 𝗛𝗧𝗧𝗣𝗦
+
+HTTP is the protocol browsers and servers use to exchange requests and responses — but it sends data in plain text.
+
+HTTPS adds SSL/TLS encryption on top, so the same data becomes unreadable if intercepted.
+
+𝗘𝘅𝗮𝗺𝗽𝗹𝗲: Logging into a banking site over HTTP would expose your password to anyone snooping on the network. HTTPS makes that data unreadable in transit.
+
+𝗥𝘂𝗹𝗲: Never ship a production app on plain HTTP — especially anything handling credentials or payments.
