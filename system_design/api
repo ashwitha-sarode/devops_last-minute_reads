@@ -1,0 +1,20 @@
+🚀 𝗗𝗮𝘆 𝟵 𝗼𝗳 𝟯𝟭: 𝗥𝗘𝗦𝗧 𝘃𝘀 𝗚𝗿𝗮𝗽𝗵𝗤𝗟 𝘃𝘀 𝗴𝗥𝗣𝗖
+
+Three ways clients and servers talk — same goal (moving data), different trade-offs.
+
+🔹 𝗥𝗘𝗦𝗧 — Resource-based, standard HTTP verbs (GET/POST/PUT/DELETE). Simple, cacheable, widely understood. Downside: you often over-fetch or under-fetch data since the response shape is fixed per endpoint.
+
+🔸 𝗚𝗿𝗮𝗽𝗵𝗤𝗟 — The client specifies exactly which fields it needs, in one query. Great for mobile apps or complex nested data. Downside: harder to cache, and adds query-complexity risk on the server.
+
+⚡ 𝗴𝗥𝗣𝗖 — Uses HTTP/2 + Protocol Buffers instead of JSON. Much faster and strongly typed — ideal for service-to-service calls inside a backend. Downside: not browser-friendly without a proxy layer.
+
+💡 𝗘𝘅𝗮𝗺𝗽𝗹𝗲
+A mobile screen needs a user's name and photo, nothing else. REST returns the full object — over-fetching on a slow connection. GraphQL asks for just those two fields. Meanwhile, two backend services talking internally (say, order service → payment service) use gRPC for the speed and strict typing.
+
+✅ 𝗪𝗵𝘆 𝗶𝘁 𝗺𝗮𝘁𝘁𝗲𝗿𝘀
+Picking the wrong style doesn't break a system, but it does slow it down:
+→ REST for public APIs
+→ GraphQL for flexible client-driven apps
+→ gRPC for internal microservices at scale
+
+#SystemDesign #API #Backend #SoftwareEngineering #TechLearning
