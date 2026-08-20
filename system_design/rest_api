@@ -1,0 +1,30 @@
+𝗗𝗮𝘆 𝟭𝟬 𝗼𝗳 𝟯𝟭: 𝗥𝗘𝗦𝗧 𝗔𝗣𝗜𝘀 🔗
+
+REST is the most widely used API style on the internet — stateless, resource-based, and built entirely on standard HTTP verbs.
+
+Every resource gets a URL. Every action maps to a verb:
+
+🟢 GET /users/123 → fetch a user
+🔵 POST /users → create a user
+🟠 PUT /users/123 → update a user
+🔴 DELETE /users/123 → delete a user
+
+That's the whole idea. You're not calling custom functions — you're performing standard operations on nouns (resources) using a fixed set of verbs everyone already understands.
+
+𝗪𝗵𝘆 𝗶𝘁 𝘄𝗼𝗿𝗸𝘀 𝘀𝗼 𝘄𝗲𝗹𝗹
+
+✅ 𝗣𝗿𝗲𝗱𝗶𝗰𝘁𝗮𝗯𝗹𝗲 — GET /orders/456 always returns the same structure. Any client, in any language, knows exactly what to expect.
+
+✅ 𝗖𝗮𝗰𝗵𝗲𝗮𝗯𝗹𝗲 — predictable responses tied to a URL mean browsers, CDNs, and proxies can cache them with zero extra logic.
+
+✅ 𝗦𝘁𝗮𝘁𝗲𝗹𝗲𝘀𝘀 — the server never remembers the client between requests, which makes REST APIs easy to scale horizontally.
+
+✅ 𝗨𝗻𝗶𝘃𝗲𝗿𝘀𝗮𝗹𝗹𝘆 𝘂𝗻𝗱𝗲𝗿𝘀𝘁𝗼𝗼𝗱 — HTTP verbs and status codes are a shared vocabulary. No custom protocol to learn.
+
+⚠️ 𝗧𝗵𝗲 𝘁𝗿𝗮𝗱𝗲-𝗼𝗳𝗳
+
+Because the response shape is fixed, clients often get more data than they need (over-fetching) or have to make several calls to stitch together related data (multiple round-trips).
+
+That single limitation is exactly why GraphQL and gRPC exist — both trade REST's simplicity for more flexible or more efficient data fetching. That's where Day 11 picks up. 👇
+
+#SystemDesign #API #RESTAPI #BackendEngineering #SoftwareEngineering
