@@ -1,0 +1,31 @@
+LinkedIn strips real bold formatting, but you can get bold-looking text using Unicode characters (𝗹𝗶𝗸𝗲 𝘁𝗵𝗶𝘀), which paste and display correctly. Here's the post with that applied to the heading and section labels:
+
+𝗗𝗮𝘆 𝟭𝟭 𝗼𝗳 𝟯𝟭: 𝗚𝗿𝗮𝗽𝗵𝗤𝗟
+
+REST gives you fixed endpoints — one URL per resource, one shape per response. GraphQL flips that: one endpoint, and the client describes exactly which fields it wants in a single query.
+
+𝗘𝘃𝗲𝗿𝘆 𝗿𝗲𝗾𝘂𝗲𝘀𝘁 𝘀𝗵𝗮𝗽𝗲𝘀 𝗶𝘁𝘀 𝗼𝘄𝗻 𝗿𝗲𝘀𝗽𝗼𝗻𝘀𝗲:
+
+🟢 query { user{ name } } → fetch just the name
+🔵 query { user{ posts{title} } } → fetch just the posts
+🟠 mutation { updateUser(id) } → update a user
+🔴 subscription { newMessage } → live updates
+
+𝗥𝗲𝗮𝗹-𝘄𝗼𝗿𝗹𝗱 𝗲𝘅𝗮𝗺𝗽𝗹𝗲: a mobile app needs "user + last 3 posts". With REST that's two calls stitched together on the client. With GraphQL it's one round-trip, returning exactly this:
+
+{ user(id: 123) {
+name
+posts(limit: 3) { title }
+} }
+
+𝗪𝗵𝗮𝘁 𝘆𝗼𝘂 𝗴𝗮𝗶𝗻:
+✅ No over-fetching or under-fetching — clients ask for exactly what they need
+✅ Fewer round-trips — big win on slow or mobile networks
+✅ One schema — self-documenting, strongly typed contract between client and server
+
+𝗪𝗵𝗮𝘁 𝗶𝘁 𝗰𝗼𝘀𝘁𝘀:
+⚠️ Harder to cache — no fixed URL per response, so CDN/HTTP caching needs extra work
+⚠️ Server complexity — resolvers, N+1 query problems, and query-depth limits to guard against abuse
+⚠️ Steeper learning curve for teams used to REST conventions
+
+#SystemDesign #GraphQL #API #BackendEngineering #DevOps
