@@ -1,0 +1,15 @@
+𝗗𝗮𝘆 𝟭𝟮 𝗼𝗳 𝟯𝟭: 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲𝘀
+
+A database is the backbone of persistent, reliable data storage — handling volumes and consistency guarantees that go far beyond what in-memory storage can offer.
+
+Client → Server → Database (Read/Write) → Server → Client
+
+𝗘𝘅𝗮𝗺𝗽𝗹𝗲:
+Every "Add to Cart" click on an e-commerce platform is a database write. Every product page load is a database read.
+
+𝗪𝗵𝘆 𝗶𝘁 𝗺𝗮𝘁𝘁𝗲𝗿𝘀:
+Choosing the right database type — SQL, NoSQL, or beyond — is one of the highest-leverage decisions in system design, directly shaping scalability, consistency, and long-term maintainability.
+
+What's your go-to database choice for high-write workloads? Let's discuss in the comments.
+
+#SystemDesign #Databases #SQL #NoSQL #SoftwareEngineering #BackendDevelopment #CloudComputing #DevOps #TechLeadership #100DaysOfCode
